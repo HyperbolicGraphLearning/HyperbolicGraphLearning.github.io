@@ -28,7 +28,7 @@
     <meta property="og:title" content="CausalRec">
     <meta property="og:type" content="website">
   </head>
-  <body data-home-page="https://causalrec.github.io/" data-home-page-title="CausalRec" class="u-body"><header class="u-clearfix u-header u-white u-header" id="sec-85c8" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
+  <body data-home-page="https://hyperbolicgraphlearning.github.io/" data-home-page-title="HGRL" class="u-body"><header class="u-clearfix u-header u-white u-header" id="sec-85c8" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://causalrec.github.io/" class="u-image u-logo u-image-1" data-image-width="511" data-image-height="109">
           <img src="./images/logo2.png" class="u-logo-image u-logo-image-1">
         </a>
@@ -62,22 +62,22 @@
       </div></header> 
     <section class="u-align-left u-clearfix u-image u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-section-1" id="sec-832e">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-1" spellcheck="false">Causal Recommendation: Progresses and Future Directions&nbsp;&nbsp;</h1>
-        <h2 class="u-text u-text-2" spellcheck="false">Lecture Tutorial for The Web Conference 2022</h2>
+        <h1 class="u-text u-text-1" spellcheck="false">Hyperbolic Graph Representation Learning: A Tutorial&nbsp;&nbsp;</h1>
+        <h2 class="u-text u-text-2" spellcheck="false">Lecture Tutorial for The ECML-PKDD 2022</h2>
       </div>
     </section>
     <section class="u-align-left u-clearfix u-section-2" id="sec-9783">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-1" spellcheck="false">Abstract</h1>
         <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
-          <p id="isPasted">Data-driven recommender systems have demonstrated great successes in various Web applications owing to the extraordinary ability of machine learning models to recognize patterns (i.e., correlation) from the massive historical user behaviors. However, these models still suffer from several issues such as biases and unfairness due to spurious correlations. Considering the causal mechanism behind data can avoid the influences of spurious correlations brought by non-causal relations. In this light, embracing causal recommendation modeling is an exciting and promising direction. Therefore, causal recommendation is increasingly drawing attention in our recommendation community. Nevertheless, there lacks a systemic overview of this topic, leading to difficulties for researchers and practitioners to understand and keep up with this direction.</p>
-          <p>In this tutorial, we aim to introduce the key concepts in causality and provide a systemic review of existing work on causal recommendation. We will introduce existing methods from two different causal frameworks --- the potential outcome framework and the structural causal model. We will give examples and discussions regarding how to utilize different causal tools under these two frameworks to model and solve problems in recommendation. A comparison between the two lines of work will be provided to facilitate understanding the differences and connections between them. Besides, we identify some open challenges and potential future directions for this area. We hope this tutorial could stimulate more ideas on this topic and facilitate the development of causality-aware recommender systems.</p>
+          <p id="isPasted"> Graph-structured data are widespread in the real-world applications, such as social networks, recommender systems, knowledge graphs, chemical molecules etc. Despite the success of Euclidean space for graph-related learning tasks, its ability to model complex patterns is essentially constrained by its polynomially growing capacity. Recently, hyperbolic spaces have emerged as a promising alternative for processing graph data with tree-like structure or power-law distribution, owing to its exponential growth property.  Different from the Euclidean space which expands polynomially, the hyperbolic space grows exponentially which makes it gains natural advantages in abstracting tree-like or scale-free graphs with hierarchical organizations. </p>.</p>
+          <p>In this tutorial, we will give an introduction to this emerging field in graph representation learning, with the express purpose of being accessible to all audiences. We first give a brief introduction to graph representation learning as well as some preliminary Riemannian and hyperbolic geometry. We then will comprehensively revisit the hyperbolic embedding techniques including hyperbolic shallow models and hyperbolic neural networks. In addition, we will give the technical details of the current hyperbolic graph neural networks, by unifying them into a general framework and summarizing the variants of each component. Moreover, we will introduce a series of related applications in a variety of fields. In the last part, we will discuss several advanced topics about hyperbolic geometry for graph representation learning, which potentially serve as guidelines for further flourishing the non-Euclidean graph learning community.</p>
         </div>
       </div>
     </section>
     <section class="u-clearfix u-grey-10 u-section-3" id="sec-298d">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-1" spellcheck="false">Outline (<font color="blue"><a href="./file/www2022-tutorial-CausalRec.pdf" target="_blank">Slides</a></font>)</h1>
+        <h1 class="u-text u-text-1" spellcheck="false">Outline (<font color="blue"><a href="./file/ecmlpkdd-tutorial-HGRL.pdf" target="_blank">Slides</a></font>)</h1>
         <ul class="u-align-left u-text u-text-2" spellcheck="false">
           <li>Part 0: introduction (15 Min).</li>
           <li>Part1:&nbsp; potential outcome framework for recommendation (60~70 Min).</li>
@@ -92,7 +92,7 @@
     </section>
     <section class="u-align-center u-clearfix u-section-4" id="sec-e335">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-1" spellcheck="false">Presenter</h1>
+        <h1 class="u-text u-text-1" spellcheck="false">Presenters</h1>
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center u-container-style u-list-item u-repeater-item">
@@ -119,44 +119,15 @@
                 </p>
               </div>
             </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-bottom-xs u-container-layout-3">
-                <div alt="" class="u-image u-image-circle u-image-3" src="" data-image-width="476" data-image-height="625"></div>
-                <h5 class="u-text u-text-6">
-                  <a href="mailto:wupeng@bicmr.pku.edu.cn" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">Dr. Peng Wu</a>
-                </h5>
-                <p class="u-text u-text-7"> Research Fellow<br>Peking University
-                </p>
-              </div>
-            </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-bottom-xs u-container-layout-4">
-                <div alt="" class="u-image u-image-circle u-image-4" src="" data-image-width="623" data-image-height="558"></div>
-                <h5 class="u-text u-text-8">
-                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6" href="https://fulifeng.github.io/">Dr. Fuli Feng</a>
-                </h5>
-                <p class="u-text u-text-9">Professor<br>University of Science and Technology of China
-                </p>
-              </div>
-            </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-bottom-xs u-container-layout-5">
-                <div alt="" class="u-image u-image-circle u-image-5" src="" data-image-width="634" data-image-height="800"></div>
-                <h5 class="u-text u-text-10">
-                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7" href="http://staff.ustc.edu.cn/~hexn/">Dr. Xiangnan He</a>
-                </h5>
-                <p class="u-text u-text-11">Professor<br>University of Science and Technology of China
-                </p>
-              </div>
-            </div>
-          </div>
+    
+
         </div>
       </div>
     </section>
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-266b"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1" spellcheck="true">Contact: zy2015@mail.ustc.edu.cn</p>
+        <p class="u-small-text u-text u-text-variant u-text-1" spellcheck="true">Contact: zhoum1900@163.com</p>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
       <a class="u-link" href="css-templates" target="_blank">
